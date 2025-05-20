@@ -1,0 +1,9 @@
+{
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.buildBeforeRun": true,
+    "cmake.configureOnOpen": false,
+    "cmake.useCMakePresets": "always",
+    "files.associations": {
+        "mcucoverage.h": "c"
+    }
+}

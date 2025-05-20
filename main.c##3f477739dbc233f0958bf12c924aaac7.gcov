@@ -1,0 +1,36 @@
+        -:    0:Source:C:/Users/perez/Documents/MSE/TSM_SoftwEng/PicoBlink/TSM_PicoW_Blinky/src/main.c
+        -:    0:Graph:build\Debug\srcLib\CMakeFiles\srcLib.dir/main.c.gcno
+        -:    0:Data:build\Debug\srcLib\CMakeFiles\srcLib.dir/main.c.gcda
+        -:    0:Runs:0
+        -:    0:Source is newer than graph
+        -:    1:/*
+        -:    2: * Copyright (c) 2024-2025, Erich Styger
+        -:    3: *
+        -:    4: * SPDX-License-Identifier: BSD-3-Clause
+        -:    5: */
+        -:    6:
+        -:    7:#include "platform.h"
+        -:    8:#include "McuRTOS.h"
+        -:    9:#include <stdio.h>
+        -:   10:#if PL_CONFIG_USE_GCOV
+        -:   11:  #include "McuCoverage.h"
+        -:   12:#endif
+        -:   13:
+        -:   14:int main(void) {
+function main called 0 returned 0% blocks executed 0%
+    #####:   15:  PL_Init();
+    #####:   16:  vTaskStartScheduler();
+    %%%%%:   16-block  0
+call    0 never executed
+    #####:   17:#if PL_CONFIG_USE_GCOV
+call    0 never executed
+        -:   18:  McuCoverage_WriteFiles(); /* write coverage data files */
+    #####:   19:#endif /* PL_CONFIG_USE_GCOV */
+call    0 never executed
+        -:   20:
+        -:   21:  for(;;) {
+    #####:   22:    /* do not return from main() */
+        -:   23:  }
+        -:   24:  return 0;
+    #####:   25:}
+    %%%%%:   25-block  0
